@@ -4,6 +4,9 @@ DROP DATABASE IF EXISTS tournament;
 /* Create database */
 CREATE DATABASE tournament;
 
+-- Connect to the DB before creating tables.
+\c tournament;
+
 /* Create SCHEMAS */
 CREATE TABLE player(
     id SERIAL PRIMARY KEY,
